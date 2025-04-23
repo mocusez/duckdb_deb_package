@@ -1,0 +1,10 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: DuckDB
+Source: https://github.com/duckdb/duckdb
+
+Files: *
+Copyright: 2019-present, DuckDB authors
+License: MIT
+
+License: MIT
+ Permission is hereby granted, free of charge, to any person obtaining a copy...

@@ -1,0 +1,5 @@
+duckdb (1.2.2-1) unstable; urgency=medium
+
+  * Initial release (Closes: #1036922)
+
+ -- Mocus Zhang <mocus@mocusez.site>  Tue, 22 Apr 2025 12:14:41 +0000
