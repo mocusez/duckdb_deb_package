@@ -1,0 +1,50 @@
+name: Build DuckDB Debian Package(arm64)
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04-arm
+    
+    steps:
+    - name: Checkout packaging repository
+      uses: actions/checkout@v4
+      with:
+        path: debian-packaging
+      
+    - name: Clone DuckDB source
+      run: |
+        git clone --branch v1.2.2 --depth 1 https://github.com/duckdb/duckdb
+
+    - name: Set up Debian orig pack
+      run: |
+        cd duckdb
+        git archive --format=tar.gz --prefix=duckdb-1.2.2/ v1.2.2 > ../duckdb_1.2.2.orig.tar.gz
+        
+    - name: Set up Debian packaging
+      run: |
+        cp -r debian-packaging/debian/ duckdb/
+        
+    - name: Install build dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y devscripts debhelper build-essential
+        sudo apt-get install -y cmake ninja-build libssl-dev g++
+        
+    - name: Build Debian package
+      run: |
+        cd duckdb
+        debuild -us -uc
+        
+    - name: Upload Debian package
+      uses: actions/upload-artifact@v4
+      with:
+        name: duckdb-deb-package-arm64
+        path: |
+          *.deb
+          *.ddeb
