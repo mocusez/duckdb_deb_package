@@ -1,0 +1,365 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: DuckDB
+Upstream-Contact: DuckDB Foundation
+Source: https://github.com/duckdb/duckdb
+
+Files: *
+Copyright: 2018-present DuckDB Foundation
+License: MIT
+
+Files: debian/*
+Copyright: Mocus Zhang <yizhe.zhang1@unsw.edu.au>
+License: MIT
+
+Files: third_party/concurrentqueue/*
+Copyright: Cameron Desrochers
+License: BSD-2-clause or BSL-1.0
+ See third_party/concurrentqueue/LICENSE for details
+
+Files: third_party/concurrentqueue/concurrentqueue.h
+Copyright: Cameron Desrochers
+License: BSD-2-clause
+ See third_party/concurrentqueue/LICENSE for details
+
+Files: third_party/fast_float/*
+Copyright: Daniel Lemire and contributors
+License: Expat
+ See third_party/fast_float/LICENSE for details
+
+Files: third_party/catch/*
+Copyright: Two Blue Cubes Ltd
+License: BSL-1.0
+
+Files: scripts/clang-tidy-diff.py
+       scripts/run-clang-tidy.py
+Copyright: 2018-present DuckDB Foundation
+License: Apache-2.0
+ C++ Format File
+
+Files: third_party/fastpforlib/*
+Copyright: Daniel Lemire and contributors
+License: Apache-2.0
+ See third_party/fastpforlib/LICENSE for details
+
+Files: third_party/fmt/*
+Copyright: Victor Zverovich
+License: Expat
+ See third_party/fmt/LICENSE for details
+
+Files: third_party/fsst/*
+Copyright: Peter Boncz, Viktor Leis, Thomas Neumann, and others
+License: Expat
+ See third_party/fsst/LICENSE for details
+
+Files: third_party/snowball/*
+Copyright: Dr Martin Porter, Richard Boulton, Yoshiki Shibukawa, Olly Betts
+License: BSD-3-clause
+ See third_party/snowball/LICENSE for details
+
+Files: third_party/httplib/*
+Copyright: Yuji Hirose
+License: Expat
+ See third_party/httplib/LICENSE for details
+
+Files: third_party/hyperloglog/*
+Copyright: SIMD HyperLogLog authors
+License: Expat
+ See third_party/hyperloglog/LICENSE for details
+
+Files: third_party/hyperloglog/hyperloglog.cpp
+       third_party/hyperloglog/sds.cpp
+       third_party/hyperloglog/sds.hpp
+Copyright: SIMD HyperLogLog authors
+License: BSD-3-clause
+ See third_party/hyperloglog/LICENSE for details
+
+Files: third_party/jaro_winkler/*
+Copyright: Jaro Winkler authors
+License: Expat
+ See third_party/jaro_winkler/LICENSE for details
+
+Files: third_party/libpg_query/*
+Copyright: Lukas Fittl
+License: BSD-3-clause
+ See third_party/libpg_query/LICENSE for details
+
+Files: third_party/libpg_query/include/parser/gram.hpp
+       third_party/libpg_query/src_backend_parser_gram.cpp
+Copyright: Lukas Fittl
+License: GPL-2+ with Bison-2.2 exception
+ See third_party/libpg_query/LICENSE for details
+
+Files: third_party/lz4/*
+Copyright: Yann Collet
+License: BSD-2-clause
+ See third_party/lz4/LICENSE for details
+
+Files: third_party/brotli/*
+Copyright: Google Inc.
+License: Expat
+ See third_party/brotli/LICENSE for details
+
+Files: third_party/mbedtls/*
+Copyright: ARM Limited (or its affiliates)
+License: Apache-2.0
+ See third_party/mbedtls/LICENSE for details
+
+Files: third_party/miniz/*
+Copyright: 2013-2014 RAD Game Tools and Valve Software
+           2010-2014 Rich Geldreich and Tenacious Software LLC
+License: Expat
+ See third_party/miniz/LICENSE for details
+
+Files: third_party/pcg/*
+Copyright: Melissa O'Neill and PCG Project contributors
+License: Expat
+ See third_party/pcg/LICENSE.txt for details
+
+Files: third_party/pcg/pcg_extras.hpp
+       third_party/pcg/pcg_random.hpp
+       third_party/pcg/pcg_uint128.hpp
+Copyright: Melissa O'Neill and PCG Project contributors
+License: Apache-2.0
+ See third_party/pcg/LICENSE.txt for details
+
+Files: third_party/re2/*
+Copyright: The RE2 Authors
+License: BSD-3-clause
+ See third_party/re2/LICENSE for details
+
+Files: third_party/thrift/*
+Copyright: Thrift authors
+License: Apache-2.0 
+ See third_party/thrift/thrift/LICENSE for details
+
+Files: third_party/tdigest/*
+Copyright: Ted Dunning
+License: Apache-2.0
+ See third_party/tdigest/LICENSE for details
+
+Files: third_party/utf8proc/*
+Copyright: Public domain and MIT
+License: Expat
+ See third_party/utf8proc/LICENSE.md for details
+
+Files: third_party/yyjson/*
+Copyright: YaoYuan
+License: Expat
+ See third_party/yyjson/LICENSE for details
+
+Files: third_party/zstd/*
+Copyright: Facebook, Inc. and its affiliates
+License: BSD-3-clause
+ See third_party/zstd/LICENSE for details
+
+Files: third_party/zstd/dict/divsufsort.cpp
+       third_party/zstd/include/zstd/dict/divsufsort.h
+Copyright: Facebook, Inc. and its affiliates
+License: Expat
+ See third_party/zstd/LICENSE for details
+
+Files: third_party/parquet/*
+Copyright: Parquet Author
+License: Apache-2.0
+ See third_party/parquet/LICENSE for details
+
+Files: third_party/skiplist/*
+Copyright: Paul Ross
+License: Expat
+ See third_party/skiplist/LICENSE for details
+
+Files: third_party/ska_sort/ska_sort.hpp
+Copyright: 2018-present DuckDB Foundation
+License: BSL-1.0
+ DuckDB Source code
+
+Files: third_party/vergesort/detail/iter_sort3.h
+       third_party/vergesort/detail/is_sorted_until.h
+       third_party/vergesort/detail/prevnext.h
+       third_party/vergesort/detail/quicksort.h
+       third_party/vergesort/vergesort.h
+Copyright: 2018-present DuckDB Foundation
+License: Expat
+ DuckDB Source code
+
+Files: third_party/vergesort/detail/insertion_sort.h
+       third_party/vergesort/detail/log2.h
+Copyright: 2018-present DuckDB Foundation
+License: Zlib
+ DuckDB Source code
+
+Files: third_party/snappy/*
+Copyright: Google Inc.
+License: BSD-3-clause
+ See third_party/snappy/LICENSE for details
+ Note: Some test data files in the upstream distribution may be under
+ different licenses (CC-BY-3.0, MIT, CC-BY, and public domain), but
+ these are not included in the Debian package.
+
+
+Files: data/geoparquet/*
+       data/parquet-testing/*
+Copyright: Apache Software Foundation
+License: Apache-2.0
+
+Files: extension/jemalloc/*
+Copyright: Jason Evans and contributors
+License: BSD-2-clause
+ See extension/jemalloc/COPYING for details
+
+Files: extension/jemalloc/jemalloc/include/jemalloc/internal/hash.h
+Copyright: Jason Evans and contributors
+License: public-domain
+ See extension/jemalloc/COPYING for details
+
+Files: extension/parquet/*
+Copyright: 2018-2023 DuckDB Foundation and Apache Parquet contributors
+License: MIT and Apache-2.0
+ DuckDB code is under MIT, Apache Parquet libraries under Apache-2.0
+ See extension/parquet/LICENSE for details
+
+Files: extension/json/*
+Copyright: 2018-2023 DuckDB Foundation
+License: MIT
+ See extension/json/LICENSE for details
+
+Files: extension/icu/*
+Copyright: 2018-present DuckDB Foundation and ICU Project
+License: Unicode-DFS-2016
+ See extension/icu/third_party/icu/LICENSE for details
+
+Files: extension/icu/third_party/icu/i18n/decContext.cpp
+       extension/icu/third_party/icu/i18n/decContext.h
+       extension/icu/third_party/icu/i18n/decNumber.cpp
+       extension/icu/third_party/icu/i18n/decNumber.h
+       extension/icu/third_party/icu/i18n/decNumberLocal.h
+Copyright: ICU Project
+License: ICU
+ See extension/icu/third_party/icu/LICENSE for details
+
+Files: extension/icu/third_party/icu/i18n/double-conversion*.cpp
+       extension/icu/third_party/icu/i18n/double-conversion*.h
+Copyright: The double-conversion Authors
+License: BSD-3-clause
+ See extension/icu/third_party/icu/LICENSE for details
+
+# Tools directory components
+Files: tools/juliapkg/*
+Copyright: 2018-2024 Stichting DuckDB Foundation
+License: Expat
+ Java JDBC driver for DuckDB
+
+Files: tools/swift/duckdb-swift/*
+Copyright: 2018-2024 Stichting DuckDB Foundation
+License: Expat
+ Swift driver for DuckDB
+
+Files: tools/swift/duckdb-swift/Sources/DuckDB/Types/IntHuge.swift
+Copyright: 2018-2024 Stichting DuckDB Foundation
+License: Apache-2.0
+ Swift driver for DuckDB
+
+Files: tools/shell/linenoise/*
+Copyright: Salvatore Sanfilippo, Pieter Noordhuis
+License: BSD-2-clause
+ See tools/shell/linenoise/LICENSE for details
+
+Files: tools/pythonpkg/duckdb/experimental/spark/*
+Copyright: Spark authors
+License: Apache-2.0
+ See tools/pythonpkg/duckdb/experimental/spark/LICENSE for details
+
+Files: tools/pythonpkg/adbc_driver_duckdb/*
+       src/common/adbc/*
+       src/include/duckdb/common/adbc/*
+Copyright: Adbc Adriver authors
+License: Apache-2.0
+ Adbc Adriver for DuckDB Python
+
+Files: tools/pythonpkg/duckdb/bytes_io_wrapper.py
+Copyright: 2018-2024 Stichting DuckDB Foundation
+License: BSD-3-clause
+ Bytes IO wrap for DuckDB Python
+
+Files: tools/pythonpkg/setup.py
+       tools/pythonpkg/pyproject.toml
+Copyright: 2018-2024 Stichting DuckDB Foundation
+License: Expat
+ Setup for DuckDB Python
+
+Files: tools/pythonpkg/tests/fast/sqlite/test_types.py
+Copyright: SQlite Authors
+License: Zlib
+ SQlite test for python
+
+# src
+
+Files: src/include/duckdb/execution/merge_sort_tree.hpp
+       src/include/duckdb/storage/compression/alp/algorithm/*
+       src/include/duckdb/storage/compression/alprd/algorithm/*
+Copyright: 2018-present DuckDB Foundation
+License: Expat
+ DuckDB Source code
+
+Files: src/include/duckdb/common/sort/duckdb_pdqsort.hpp
+       third_party/pdqsort/pdqsort.h
+Copyright: 2018-present DuckDB Foundation
+License: Zlib
+ DuckDB Source code
+
+Files: src/include/duckdb/common/arrow/nanoarrow/nanoarrow.h
+       src/include/duckdb/common/adbc/adbc-init.hpp
+Copyright: 2018-present DuckDB Foundation
+License: Apache-2.0
+ DuckDB Source code
+
+Files: src/common/crypto/md5.cpp
+Copyright: Colin Plumb
+License: public-domain
+ SQLite md5 code
+
+License: MIT
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated documentation files (the "Software"), to deal
+ in the Software without restriction, including without limitation the rights
+ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+ .
+ The above copyright notice and this permission notice shall be included in all
+ copies or substantial portions of the Software.
+ .
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ SOFTWARE.
+
+License: BSL-1.0
+ Permission is hereby granted, free of charge, to any person or organization
+ obtaining a copy of the software and accompanying documentation covered by
+ this license (the "Software") to use, reproduce, display, distribute,
+ execute, and transmit the Software, and to prepare derivative works of the
+ Software, and to permit third-parties to whom the Software is furnished to
+ do so, all subject to the following:
+ .
+ The copyright notices in the Software and this entire statement, including
+ the above license grant, this restriction and the following disclaimer,
+ must be included in all copies of the Software, in whole or in part, and
+ all derivative works of the Software, unless such copies or derivative
+ works are solely in the form of machine-executable object code generated by
+ a source language processor.
+ .
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE, TITLE AND NON-INFRINGEMENT. IN NO EVENT
+ SHALL THE COPYRIGHT HOLDERS OR ANYONE DISTRIBUTING THE SOFTWARE BE LIABLE
+ FOR ANY DAMAGES OR OTHER LIABILITY, WHETHER IN CONTRACT, TORT OR OTHERWISE,
+ ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+ DEALINGS IN THE SOFTWARE.
+
+License: Apache-2.0
+ On Debian systems, the full text of the Apache License
+ can be found in /usr/share/common-licenses/Apache-2.0.

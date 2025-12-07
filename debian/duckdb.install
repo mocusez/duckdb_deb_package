@@ -1,0 +1,3 @@
+usr/bin/duckdb
+examples/* usr/share/doc/duckdb/examples/
+debian/duckdb.1 usr/share/man/man1/

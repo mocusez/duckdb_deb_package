@@ -1,0 +1,106 @@
+.TH V1.3.2 "1" "June 2025" "Ossivalis 2063dda3e6" "User Commands"
+.SH NAME
+v1.3.2 \- DuckDB CLI shell
+.SH SYNOPSIS
+.B duckdb
+[\fI\,OPTIONS\/\fR] \fI\,FILENAME \/\fR[\fI\,SQL\/\fR]
+.SH DESCRIPTION
+FILENAME is the name of an DuckDB database. A new database is created
+if the file does not previously exist.
+OPTIONS include:
+.TP
+\fB\-ascii\fR
+set output mode to 'ascii'
+.TP
+\fB\-bail\fR
+stop after hitting an error
+.TP
+\fB\-batch\fR
+force batch I/O
+.TP
+\fB\-box\fR
+set output mode to 'box'
+.TP
+\fB\-column\fR
+set output mode to 'column'
+.TP
+\fB\-cmd\fR COMMAND
+run "COMMAND" before reading stdin
+.TP
+\fB\-c\fR COMMAND
+run "COMMAND" and exit
+.TP
+\fB\-csv\fR
+set output mode to 'csv'
+.TP
+\fB\-echo\fR
+print commands before execution
+.TP
+\fB\-f\fR FILENAME
+read/process named file and exit
+.TP
+\fB\-init\fR FILENAME
+read/process named file
+.TP
+\fB\-[no]header\fR
+turn headers on or off
+.TP
+\fB\-help\fR
+show this message
+.TP
+\fB\-html\fR
+set output mode to HTML
+.TP
+\fB\-interactive\fR
+force interactive I/O
+.TP
+\fB\-json\fR
+set output mode to 'json'
+.TP
+\fB\-line\fR
+set output mode to 'line'
+.TP
+\fB\-list\fR
+set output mode to 'list'
+.TP
+\fB\-markdown\fR
+set output mode to 'markdown'
+.TP
+\fB\-newline\fR SEP
+set output row separator. Default: '\en'
+.TP
+\fB\-no\-stdin\fR
+exit after processing options instead of reading stdin
+.TP
+\fB\-nullvalue\fR TEXT
+set text string for NULL values. Default 'NULL'
+.TP
+\fB\-quote\fR
+set output mode to 'quote'
+.TP
+\fB\-readonly\fR
+open the database read\-only
+.TP
+\fB\-s\fR COMMAND
+run "COMMAND" and exit
+.TP
+\fB\-safe\fR
+enable safe\-mode
+.TP
+\fB\-separator\fR SEP
+set output column separator. Default: '|'
+.TP
+\fB\-table\fR
+set output mode to 'table'
+.TP
+\fB\-ui\fR
+launches a web interface using the ui extension (configurable with .ui_command)
+.TP
+\fB\-unredacted\fR
+allow printing unredacted secrets
+.TP
+\fB\-unsigned\fR
+allow loading of unsigned extensions
+.TP
+\fB\-version\fR
+show DuckDB version

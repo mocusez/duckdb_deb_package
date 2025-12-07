@@ -1,0 +1,33 @@
+Description: Add proper SONAME to libduckdb shared library
+ This patch adds set_target_properties to the CMakeLists.txt file to
+ properly set VERSION and SOVERSION for the libduckdb shared library.
+ This ensures that the library has the correct SONAME
+ and version information, fixing packaging issues related to
+ shared library versioning.
+ .
+ duckdb (1.4.2-1) unstable; urgency=medium
+ .
+   * Initial release (Closes: #1036922)
+Author: Mocus Zhang <yizhe.zhang1@unsw.edu.au>
+Origin: vendor
+Forwarded: not-needed
+Last-Update: 2025-05-08
+Bug-Debian: https://bugs.debian.org/1036922
+
+
+--- duckdb-1.3.2.orig/src/CMakeLists.txt
++++ duckdb-1.3.2/src/CMakeLists.txt
+@@ -160,6 +160,13 @@ else()
+ 
+ endif()
+ 
++set_target_properties(
++  duckdb 
++  PROPERTIES
++  VERSION 1.3.2
++  SOVERSION 1
++)
++
+ install(
+   TARGETS duckdb duckdb_static
+   EXPORT "${DUCKDB_EXPORT_SET}"

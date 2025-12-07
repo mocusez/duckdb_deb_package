@@ -1,0 +1,6 @@
+usr/include/duckdb.h
+usr/include/duckdb.hpp
+usr/include/duckdb/*
+usr/lib/*/cmake/DuckDB/*
+usr/lib/*/lib*.a
+usr/lib/*/libduckdb.so
